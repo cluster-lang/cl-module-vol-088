@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-8223: Test Suite
+import "../gwg_8223.zk"
+
+fn test_run():
+    res := waitgroup_delta_8223(5, -1)
+    if res != 4 + 8223: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-8223!")

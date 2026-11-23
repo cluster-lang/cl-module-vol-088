@@ -1,0 +1,6 @@
+// cl-go-waitgroup-barrier-stage-8025
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn waitgroup_delta_8025(counter: int, delta: int) -> int:
+    return counter + delta + 8025

@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-7905: Test Suite
+import "../gwg_7905.zk"
+
+fn test_run():
+    res := waitgroup_delta_7905(5, -1)
+    if res != 4 + 7905: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-7905!")

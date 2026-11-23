@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-8940: Test Suite
+import "../gwg_8940.zk"
+
+fn test_run():
+    res := waitgroup_delta_8940(5, -1)
+    if res != 4 + 8940: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-8940!")

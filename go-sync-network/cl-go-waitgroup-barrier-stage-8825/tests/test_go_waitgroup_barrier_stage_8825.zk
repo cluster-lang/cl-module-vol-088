@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-8825: Test Suite
+import "../gwg_8825.zk"
+
+fn test_run():
+    res := waitgroup_delta_8825(5, -1)
+    if res != 4 + 8825: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-8825!")

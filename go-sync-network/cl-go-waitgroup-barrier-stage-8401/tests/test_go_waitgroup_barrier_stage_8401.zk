@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-8401: Test Suite
+import "../gwg_8401.zk"
+
+fn test_run():
+    res := waitgroup_delta_8401(5, -1)
+    if res != 4 + 8401: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-8401!")

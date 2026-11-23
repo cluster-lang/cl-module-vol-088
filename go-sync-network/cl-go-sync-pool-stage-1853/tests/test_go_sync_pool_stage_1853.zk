@@ -1,0 +1,10 @@
+// cl-go-sync-pool-stage-1853: Test Suite
+import "../gsp_1853.zk"
+
+fn test_run():
+    res := pool_slot_index_1853(2, 16)
+    if res != (26 + 1853) % 16: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-sync-pool-stage-1853!")

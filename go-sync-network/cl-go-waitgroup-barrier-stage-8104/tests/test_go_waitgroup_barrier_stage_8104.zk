@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-8104: Test Suite
+import "../gwg_8104.zk"
+
+fn test_run():
+    res := waitgroup_delta_8104(5, -1)
+    if res != 4 + 8104: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-8104!")

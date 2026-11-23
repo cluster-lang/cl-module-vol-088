@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-7387: Test Suite
+import "../gwg_7387.zk"
+
+fn test_run():
+    res := waitgroup_delta_7387(5, -1)
+    if res != 4 + 7387: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-7387!")

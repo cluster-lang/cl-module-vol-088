@@ -1,0 +1,10 @@
+// cl-go-sync-pool-stage-41: Test Suite
+import "../gsp_41.zk"
+
+fn test_run():
+    res := pool_slot_index_41(2, 16)
+    if res != (26 + 41) % 16: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-sync-pool-stage-41!")

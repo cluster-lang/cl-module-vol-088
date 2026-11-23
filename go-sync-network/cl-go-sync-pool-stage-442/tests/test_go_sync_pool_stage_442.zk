@@ -1,0 +1,10 @@
+// cl-go-sync-pool-stage-442: Test Suite
+import "../gsp_442.zk"
+
+fn test_run():
+    res := pool_slot_index_442(2, 16)
+    if res != (26 + 442) % 16: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-sync-pool-stage-442!")

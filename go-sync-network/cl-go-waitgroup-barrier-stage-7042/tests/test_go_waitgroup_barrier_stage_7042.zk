@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-7042: Test Suite
+import "../gwg_7042.zk"
+
+fn test_run():
+    res := waitgroup_delta_7042(5, -1)
+    if res != 4 + 7042: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-7042!")

@@ -1,0 +1,10 @@
+// cl-go-waitgroup-barrier-stage-8089: Test Suite
+import "../gwg_8089.zk"
+
+fn test_run():
+    res := waitgroup_delta_8089(5, -1)
+    if res != 4 + 8089: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-waitgroup-barrier-stage-8089!")
